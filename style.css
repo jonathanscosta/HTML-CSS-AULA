@@ -1,0 +1,27 @@
+
+th{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+table{
+    margin-top: 50PX;
+}
+
+.aulaDaInfinity{
+    color: limegreen;
+}
+.feriado{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    
+}
+a:hover { background-color: rgba(0, 0, 0, 0.1);}
