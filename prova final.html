@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Portfólio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #f1f5f9;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: #1e293b;
+    }
+
+    header img {
+        width: 120px;
+        border-radius: 50%;
+        border: 3px solid #38bdf8;
+    }
+
+    header h1 {
+        margin: 15px 0 5px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 20px;
+    }
+
+    /* Layout com Grid */
+    .grid {
+        display: grid;
+        gap: 20px;
+    }
+
+    .skills, .projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Contato */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        padding-top: 20px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #38bdf8;
+        color: #0f172a;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0ea5e9;
+    }
+
+    .social a {
+        margin-right: 10px;
+        color: #38bdf8;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #1e293b;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+        header {
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://media.licdn.com/dms/image/v2/D4D22AQGjovi11-1j_Q/feedshare-shrink_800/feedshare-shrink_800/0/1704974093862?e=2147483647&v=beta&t=uzJIDnIRAJywitdS_RBgZM8zutxFBgtA1MLCriSvOM0" alt="Foto de perfil">
+    <h1>Francisco Jonathan Sousa da Costa</h1>
+    <p>Desenvolvedor Full Stack | Criador de Soluções Digitais</p>
+</header>
+
+<section>
+    <h2>Sobre Mim</h2>
+    <p>Sou desenvolvedor apaixonado por tecnologia, focado em criar soluções práticas e eficientes. Tenho experiência com desenvolvimento web, automações e sistemas inteligentes.</p>
+</section>
+
+<section>
+    <h2>Habilidades</h2>
+    <div class="grid skills">
+        <div class="card">HTML & CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Python</div>
+        <div class="card">Flask</div>
+        <div class="card">Banco de Dados</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projetos</h2>
+    <div class="grid projects">
+        <div class="card">
+            <h3>Projeto 1</h3>
+            <p>Sistema web com autenticação e banco de dados.</p>
+        </div>
+        <div class="card">
+            <h3>Projeto 2</h3>
+            <p>Aplicação de automação com Python.</p>
+        </div>
+        <div class="card">
+            <h3>Projeto 3</h3>
+            <p>Site responsivo para e-commerce.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Experiência</h2>
+    <div class="card">
+        <p><strong>Desenvolvedor</strong> - Projetos Freelance</p>
+        <p>Criação de sistemas web e soluções personalizadas para clientes.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contato</h2>
+
+    <div class="social">
+        <a href="https://www.linkedin.com/in/jonathan-costa-15b882378/">LinkedIn</a>
+        <a href="https://github.com/jonathanscosta">GitHub</a>
+    
+    </div>
+
+    <form>
+        <h2>Entre em contato</h2>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 - Seu Nome</p>
+</footer>
+
+</body>
+</html>
