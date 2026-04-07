@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt - br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Flexbox Centralizado</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Alinha horizontalmente */
+            align-items: center;     /* Alinha verticalmente */
+            min-height: 100vh;       /* Altura mínima para ver o alinhamento */
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Francisco Jonathan Sousa da Costa <br><br></h1>
 
-    </header>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
 
-    <main>
-        <h2>Sobre mim</h2>
-        <p>Sou um estudante e amande da programação, tenho 39 anos e desde sempre tive a programação como uma paixão</p>
-
-        <h2>Formação acadêmica</h2>
-        <p>Curso técnico programação fullStack:  infinity School. <br>Desenvolvimento de software pela BYU Pathway <br>
-        </p>
-        <h3>Linguagens de programação:</h3>
-        <p>Python <br> |JavaScript <br>HTML <br>Css</p>
-
-        <h2>Experiências Profissionais:</h2>
-        <p>Sistema de gerenciamento de restaurantes Freelancer <br>
-        Cardapio digital para restaurantes e lanchonetes Freelancer<br>
-        Site Saas para empresas de suplementos Freelancer<br>
-        Aplicativo de exercicios fisicos para usuários de academia Freelancer</p>
-
-        <h2>Soft Skills</h2>
-        <p>Organizado <br> Comunicativo <br> rápida apredizagem <br>
-        focado em entrega de bons programas no prazo adequado</p>
-
-        <h2>Cursos e Aprimoramentos</h2>
-        <p>Flask <br>automação em python <br> Data Science <br> Game design </p>
-    </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
