@@ -1,152 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário Responsivo</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f4f6f8;
-    }
-
-    .container {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
-    form {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        width: 100%;
-        max-width: 400px;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .field {
-        position: relative;
-        margin-bottom: 15px;
-    }
-
-   
-    .field::before {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 16px;
-    }
-
-    .username::before {
-        content: "👤";
-    }
-
-    .password::before {
-        content: "🔒";
-    }
-
-    input {
-        width: 90%;
-        padding: 10px 10px 10px 35px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        outline: none;
-    }
-
-    input:focus {
-        border-color: #4CAF50;
-    }
-
-    .buttons {
-        display: flex;
-        gap: 10px;
-        margin-top: 15px;
-    }
-
-    button {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        background: #4CAF50;
-        color: white;
-        font-weight: bold;
-    }
-
-    button[type="reset"] {
-        background: #f44336;
-    }
-
-    
-    button::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,0.3);
-        transition: 0.4s;
-    }
-
-    button:hover::after {
-        left: 100%;
-    }
-
-    /* RESPONSIVIDADE */
-
-    /* Mobile (padrão já é 100%) */
-
-    /* Tablet */
-    @media (min-width: 600px) {
-        form {
-            max-width: 500px;
+    <meta charset="UTF-8">
+    <title>Flexbox Centralizado</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-    }
 
-    /* Desktop */
-    @media (min-width: 1024px) {
-        form {
-            max-width: 400px;
+        .container {
+            display: flex;
+            justify-content: center; /* Alinha horizontalmente */
+            align-items: center;     /* Alinha verticalmente */
+            min-height: 100vh;       /* Altura mínima para ver o alinhamento */
+            background-color: #f0f0f0;
         }
-    }
-</style>
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
-    <form>
-        <h2>Login</h2>
-
-        <div class="field username">
-            <input type="text" placeholder="Nome de Usuário">
-        </div>
-
-        <div class="field password">
-            <input type="password" placeholder="Senha">
-        </div>
-
-        <div class="buttons">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </div>
-    </form>
-</div>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
 
 </body>
 </html>
